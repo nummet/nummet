@@ -1,10 +1,10 @@
 """
-Dette skriptet estimerar kor lang tid det tar � krysse ei elv med variabel 
+Dette skriptet estimerar kor lang tid det tar å krysse ei elv med variabel 
 straum - med to ulike strategiar.
-Strategi 1 g�r ut p� � alltid kompensere for straumen ved � gjere 
-y-komponenten av sv�mme-farten like stor som straument S(x).
-Strategi 2 g�r ut p� at vinkelen theta mellom farten v og x-aksen blir holdt 
-fast heile svømmeturen. Vinkelen blir d� bestemt av kravet om at ein ikkje 
+Strategi 1 går ut på å alltid kompensere for straumen ved å gjere 
+y-komponenten av svømme-farten like stor som straument S(x).
+Strategi 2 går ut på at vinkelen theta mellom farten v og x-aksen blir holdt 
+fast heile svÃ¸mmeturen. Vinkelen blir då bestemt av kravet om at ein ikkje 
 skal ha noko netto avdrift i y-retning.
 
 Skriptet reknar ut kor lang tid ein brukar med kvar av metodane. I tillegg 
@@ -32,7 +32,7 @@ def S(x):
 def Trapes(x, y):
     L = len(x)                  # Antal punkt
     dx = x[1] - x[0]            # Delta x (antar uniformt grid)
-    T = 0.5*dx*(y[0] + y[-1])   # Første og siste punkt
+    T = 0.5*dx*(y[0] + y[-1])   # FÃ¸rste og siste punkt
     for i in range(1,L-1):      # Summerar alle andre bidrag
         T = T + dx*y[i]         
     return T
@@ -43,7 +43,7 @@ TidVektor = 1/np.sqrt(v**2 - S(xVektor)**2)
 T1 = Trapes(xVektor, TidVektor)
 
 # Skriv resultatet til skjerm
-print(f'Med strategi 1 brukar vi {T1:.2f} s på å krysse elva')    
+print(f'Med strategi 1 brukar vi {T1:.2f} s pÃ¥ Ã¥ krysse elva')    
 
 # Bestemmer vinkelen for strategi 2
 Svektor = S(xVektor)
@@ -52,7 +52,7 @@ theta = np.arcsin(Int/(v*D))
 T2 = D**2/np.sqrt((v*D)**2 - Int**2)
 
 # Skriv resultatet til skjerm
-print(f'Med strategi 2 brukar vi {T2:.2f} s på å krysse elva')    
+print(f'Med strategi 2 brukar vi {T2:.2f} s pÃ¥ Ã¥ krysse elva')    
     
 # Plottar framdrifta som funksjon av tid for strategi 1:
 # Tida brukt for kvar \Delta x, strategi 1:
@@ -75,7 +75,7 @@ plt.plot(FramdriftTidS1, xVektor,'-', color = 'blue', linewidth = 1.5)
 plt.plot(FramdriftTidS2, xVektor, '-', color = 'red', linewidth = 1.5)
 # Markerar sluttidene som loddrette strekar
 plt.vlines([T1, T2], 0, D, linestyles = 'dashed', colors = 'black')
-# Pyntar på figuren
+# Pyntar pÃ¥ figuren
 plt.xlabel('Tid [s]', fontsize = 25)
 plt.ylabel('Framdrift [m]', fontsize = 25)
 plt.xticks(fontsize=25)
