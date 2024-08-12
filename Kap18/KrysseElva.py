@@ -12,6 +12,10 @@ plottar vi banen gjennom elva og framdrifta over elva plotta som funksjon av
 tid.
 """
 
+##############################################################################################
+# XXX: Koden er kopiert over i notebook (i samme katalog) og revidert med tanke på stil der. #
+##############################################################################################
+
 # Bibliotek
 import numpy as np
 from matplotlib import pyplot as plt
