@@ -13,3 +13,9 @@ Dersom du ønsker å kunne kjøre MATLAB-kode må du også installere en MATLAB-
 >> cd <kapittel> 
 >> jupyter nbconvert --to=script *Python.ipynb
 >> pylint *Python.py
+
+## TODO
+* arange -> linspace
+* Konsekvent bruk av plt.show()
+* .2f -> .4f (eller .4e der det passer)
+* python <Scriptnavn>.py -> %run ./<Scriptnavn>.py
