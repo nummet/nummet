@@ -19,3 +19,6 @@ Dersom du ønsker å kunne kjøre MATLAB-kode må du også installere en MATLAB-
 * Konsekvent bruk av plt.show()
 * .2f -> .4f (eller .4e der det passer)
 * python <Scriptnavn>.py -> %run ./<Scriptnavn>.py
+* "..." -> '...'
+* Undersøk bruk av "precision" for utskrift av matriser og vektorer
+* Oppdatere kapittelnumre (ikke bruke navn, det gir ikke rett sortering)
