@@ -22,3 +22,5 @@ Dersom du ønsker å kunne kjøre MATLAB-kode må du også installere en MATLAB-
 * "..." -> '...'
 * Undersøk bruk av "precision" for utskrift av matriser og vektorer
 * Oppdatere kapittelnumre (ikke bruke navn, det gir ikke rett sortering)
+* Ta med import av biblioteker der det er fullstendige "skripter"
+* Forklar bruken av np.float64 (plott i Kap. 9 Numerisk integrasjon)
