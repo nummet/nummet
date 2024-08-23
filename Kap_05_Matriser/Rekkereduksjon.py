@@ -8,6 +8,9 @@ redusert trappeform og skriv resultatet til skjerm.
 import numpy as np
 import sympy
 
+# Sett antall desimalar vi skriv til skjerm for NumPy
+np.set_printoptions(precision=4, floatmode='fixed', suppress=True)
+
 # Tilordnar totalmatrisa 
 T = np.array([[5, 1, 1, -2, 2],
               [1, -1, 1, 7, 30],

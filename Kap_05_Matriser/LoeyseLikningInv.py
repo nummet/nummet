@@ -8,6 +8,9 @@ og ukjende - altså  når koeffisientmatrisa er kvadratisk.
 # Importerar numpy
 import numpy as np
 
+# Sett antall desimalar vi skriv til skjerm for NumPy
+np.set_printoptions(precision=4, floatmode='fixed', suppress=True)
+
 # Tilordnar matrisa
 A = np.array([[1, 2, 0, 0],
              [1, -2, 1, 0],
