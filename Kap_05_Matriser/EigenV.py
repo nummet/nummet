@@ -1,5 +1,4 @@
-"""
-Skriptet finn eigenverdiar og eigenvektorar til ei matrise. 
+""" Skriptet finn eigenverdiar og eigenvektorar til ei matrise. 
 I tillegg til å skrive ut desse, sjekkar også skriptet om
 den karakteristiske likninga, det(A - \lambda I) = 0, er
 oppfylt - og at V^{-1} A V, der V har eigenvektorane som
@@ -9,6 +8,9 @@ diagonalen.
 
 # Importerar NumPy
 import numpy as np
+
+# Sett antall desimalar vi skriv til skjerm for NumPy
+np.set_printoptions(precision=4, floatmode='fixed', suppress=True)
 
 # Tilordnar matrisa
 A = np.array([[4, 6, 6],
@@ -22,7 +24,7 @@ Lambda, V = np.linalg.eig(A)
 print('Vektor med eigenverdiar:')
 print(Lambda)
 print('Matrise med eigenvektorar:')
-print(np.round(V, 4))
+print(V)
 
 # Sjekkar den karakterstiske likninga
 EigenVerdi = Lambda[0]

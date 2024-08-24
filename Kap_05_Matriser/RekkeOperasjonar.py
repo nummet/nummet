@@ -8,6 +8,9 @@ ei gitt matrise.
 # Importerar NumPy
 import numpy as np
 
+# Sett antall desimalar vi skriv til skjerm for NumPy
+np.set_printoptions(precision=4, floatmode='fixed', suppress=True)
+
 # Tilordnar ei matrise
 A = np.array([[1, 2, 3],
               [4, 5, 6]])
@@ -28,7 +31,7 @@ def ByteRekker(A, m, n):
 # Funksjon som legg k gonger rekke m til rekke n
 def LeggeTilMult(A, m, n, k):
     B = np.copy(A)
-    B[n, :] = B[n, :] + k*B[m, :]
+    B[n, :] = A[n, :] + k*A[m, :]
     return B
 
 # Utfører rekkeoperasjonar på A
