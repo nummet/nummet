@@ -22,14 +22,46 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
 
 ## TODO
 * arange -> linspace
-* Konsekvent bruk av plt.show()
 * .2f -> .4f (eller .4e der det passer)
-* python <Scriptnavn>.py -> %run ./<Scriptnavn>.py
 * "..." -> '...'
-* Undersøk bruk av "precision" for utskrift av matriser og vektorer
-* Oppdatere kapittelnumre (ikke bruke navn, det gir ikke rett sortering)
-* Ta med import av biblioteker der det er fullstendige "skripter"
-* Forklar bruken av np.float64 (plott i Kap. 9 Numerisk integrasjon)
 * Standardiserer på initialisering (til null) ved allokering av arrays
+* Bruk """ """ i starten av skripter
+* Ikke ta med "kjørekommandoer" for skripter
+* Bruk "precision" for utskrift av matriser og vektorer
 * Vi bruker arc* for trigonometriske funksjoner
-* Bruk """ """ i started av skripter
+* Konsekvent bruk av plt.show()
+* Ta med import av biblioteker der det er fullstendige "skripter"
+
+## 2. gjennomgang kapitler
+("Les og revider" betyr at 1. gjennomgang ikke er gjort av MLS.)
+
+* Lørdag
+    * Les og revider 0--2
+    * Revider 3
+    * Les + revider 4
+    * Les + revider 5
+    * Les + revider 6
+* Søndag
+    * Erstatt MATLAB-figurer (fra notebooks)
+    * Les + revider 7
+    * Les + revider 8
+    * Revider 9
+    * Les + revider 10
+    * Revider 11
+* Mandag
+    * Les + revider 12
+    * Revider 13
+    * Revider 14 - separer ut gauss-funk (ikke ha den som en internfunksjon)! sigma/mu som input eller ei?
+    * Revider 15
+    * Revider 16
+* Tirsdag
+    * Revider 17
+    * Les og revider 18
+    * Revider 19
+    * Revider 20
+    * Les og revider A og B
+* Onsdag
+    * Rydde nummet-repo
+        * Oppdater Installasjon.ipynb
+        * Oppdater README.md
+        * Synke kode mellom notebooks, skripter og bokmanus
