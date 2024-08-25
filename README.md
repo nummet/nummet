@@ -31,36 +31,37 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
 * Vi bruker arc* for trigonometriske funksjoner
 * Konsekvent bruk av plt.show()
 * Ta med import av biblioteker der det er fullstendige "skripter"
+* Erstatt MATLAB-figurer (fra notebooks)
+* Bruk hstack og vstack, ikke c_ og r_
 
 ## 2. gjennomgang kapitler
 ("Les og revider" betyr at 1. gjennomgang ikke er gjort av MLS.)
 
-* Lørdag
-    * Les og revider 0--2
-    * Revider 3
+* Søndag
+    * ~~Les og revider 0--2~~
+    * Revider 3 
     * Les + revider 4
     * Les + revider 5
     * Les + revider 6
-* Søndag
-    * Erstatt MATLAB-figurer (fra notebooks)
+* Mandag
     * Les + revider 7
     * Les + revider 8
     * Revider 9
     * Les + revider 10
     * Revider 11
-* Mandag
+* Tirsdag
     * Les + revider 12
     * Revider 13
     * Revider 14 - separer ut gauss-funk (ikke ha den som en internfunksjon)! sigma/mu som input eller ei?
     * Revider 15
     * Revider 16
-* Tirsdag
+* Onsdag
     * Revider 17
     * Les og revider 18
     * Revider 19
     * Revider 20
     * Les og revider A og B
-* Onsdag
+* Senere
     * Rydde nummet-repo
         * Oppdater Installasjon.ipynb
         * Oppdater README.md
