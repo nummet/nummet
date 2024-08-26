@@ -32,7 +32,7 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
 * Konsekvent bruk av plt.show()
 * Ta med import av biblioteker der det er fullstendige "skripter"
 * Erstatt MATLAB-figurer (fra notebooks)
-* Bruk hstack og vstack, ikke c_ og r_
+* Bruk hstack og vstack (eller append, hvis mulig), ikke c_ og r_ (Hva med concatenate().)
 
 ## 2. gjennomgang kapitler
 ("Les og revider" betyr at 1. gjennomgang ikke er gjort av MLS.)
@@ -41,7 +41,7 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
     * ~~Les og revider 0--2~~
     * ~~Revider 3~~
 * Mandag
-    * Les + revider 4
+    * ~~Les + revider 4~~
     * Les + revider 5
     * Les + revider 6
     * Les + revider 7
