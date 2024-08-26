@@ -42,8 +42,8 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
     * ~~Revider 3~~
 * Mandag
     * ~~Les + revider 4~~
-    * Les + revider 5
-    * Les + revider 6
+    * ~~Les + revider 5~~
+    * ~~Les + revider 6~~
     * Les + revider 7
     * Les + revider 8
     * Revider 9
