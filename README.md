@@ -44,10 +44,10 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
     * ~~Les + revider 4~~
     * ~~Les + revider 5~~
     * ~~Les + revider 6~~
-    * Les + revider 7
-    * Les + revider 8
-    * Revider 9
+    * ~~Les + revider 7~~
+    * ~~Les + revider 8~~
 * Tirsdag
+    * Revider 9
     * Les + revider 10
     * Revider 11
     * Les + revider 12
@@ -60,8 +60,8 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
     * Les og revider 18
     * Revider 19
     * Revider 20
-    * Les og revider A og B
 * Senere
+    * Les og revider A og B
     * Rydde nummet-repo
         * Oppdater Installasjon.ipynb
         * Oppdater README.md
