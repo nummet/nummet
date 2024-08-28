@@ -47,7 +47,7 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
     * ~~Les + revider 7~~
     * ~~Les + revider 8~~
 * Tirsdag
-    * Revider 9
+    * ~~Revider 9~~
     * Les + revider 10
     * Revider 11
     * Les + revider 12
