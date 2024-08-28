@@ -40,28 +40,29 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
 * Søndag
     * ~~Les og revider 0--2~~
     * ~~Revider 3~~
-* Mandag
+* Mandag-onsdag
     * ~~Les + revider 4~~
     * ~~Les + revider 5~~
     * ~~Les + revider 6~~
     * ~~Les + revider 7~~
     * ~~Les + revider 8~~
-* Tirsdag
     * ~~Revider 9~~
+* Mandag
     * Les + revider 10
     * Revider 11
     * Les + revider 12
     * Revider 13
+* Tirsdag
     * Revider 14 - separer ut gauss-funk (ikke ha den som en internfunksjon)! sigma/mu som input eller ei?
-* Onsdag
     * Revider 15
     * Revider 16
     * Revider 17
+* Onsdag/torsdag
     * Les og revider 18
     * Revider 19
     * Revider 20
-* Senere
     * Les og revider A og B
+* Senere
     * Rydde nummet-repo
         * Oppdater Installasjon.ipynb
         * Oppdater README.md
