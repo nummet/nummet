@@ -48,9 +48,9 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
     * ~~Les + revider 8~~
     * ~~Revider 9~~
 * Mandag
-    * Les + revider 10
-    * Revider 11
-    * Les + revider 12
+    * ~~Les + revider 10~~
+    * ~~Revider 11~~ Legg inn figurene som viser tid med/uten allokering (se notebook)
+    * ~~Les + revider 12~~
     * Revider 13
 * Tirsdag
     * Revider 14 - separer ut gauss-funk (ikke ha den som en internfunksjon)! sigma/mu som input eller ei?
