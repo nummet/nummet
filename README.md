@@ -54,10 +54,10 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
     * ~~Revider 13~~
 * Tirsdag
     * ~~Revider 14~~
-    * Revider 15
-    * Revider 16
-    * Revider 17
+    * ~~Revider 15~~
+    * ~~Revider 16~~
 * Onsdag/torsdag
+    * Revider 17
     * Les og revider 18
     * Revider 19
     * Revider 20
