@@ -58,8 +58,8 @@ PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
     * ~~Revider 16~~
 * Onsdag/torsdag
     * ~~Revider 17~~
-    * Les og revider 18
-    * Revider 19
+    * ~~Les og revider 18~~
+    * ~~Revider 19~~
     * Revider 20
     * Les og revider A og B
 * Senere
