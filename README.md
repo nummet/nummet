@@ -21,13 +21,9 @@ PEP 8 – Style Guide for Python Code: https://peps.python.org/pep-0008/
 PEP 257 – Docstring Conventions: https://peps.python.org/pep-0257/
 
 ## TODO
-* Bruk "precision" for utskrift av matriser og vektorer
-* Konsekvent bruk av plt.show()
 * Ta med import av biblioteker der det er fullstendige "skripter"
 * Erstatt MATLAB-figurer (fra notebooks)
-* Bruk "Bibliotek" overalt
-* Skript?
-* Fjern "fontsize"
+* Sjekk opp plotting - stikkprøver i terminal og i notatbok
 * Rydde nummet-repo
   * Oppdater Installasjon.ipynb
   * Oppdater README.md
