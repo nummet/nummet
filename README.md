@@ -2,6 +2,8 @@
 Kodebase for Praktisk introduksjon til numeriske metodar.
 
 ## Installering av conda, Jupyter Lab, Python og avhengigheter
+(Se også Jupyter notebook Installasjon.ipynb)
+
 Gå til https://docs.conda.io/projects/conda/en/latest/user-guide/install, velg korrekt OS og installer miniconda.
 
 Kjør følgende kommandoer for å oppdatere conda og installere nødvendige avhengigheter:
