@@ -5,8 +5,10 @@ Kodebase for Praktisk introduksjon til numeriske metodar.
 Gå til https://docs.conda.io/projects/conda/en/latest/user-guide/install, velg korrekt OS og installer miniconda.
 
 Kjør følgende kommandoer for å oppdatere conda og installere nødvendige avhengigheter:
-> conda update -n base -c conda-forge conda
+```
+> conda update -n base -c conda-forge conda 
 > conda create -n nummet -c conda-forge jupyterlab python matplotlib numpy sympy
+```
 
 Hvis du har MATLAB installert og ønsker å kunne kjøre notebooks med MATLAB-kode i tillegg til de med Python-kode, så må du også installere en MATLAB-kjerne for Jupyter:
 > conda activate nummet
