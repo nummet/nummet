@@ -1,30 +1,30 @@
 # Praktisk introduksjon til numeriske metodar
 Kodebase for Praktisk introduksjon til numeriske metodar.
 
-## Installering av conda, Jupyter Lab, Python og avhengigheter
-(Se også Jupyter notebook Installasjon.ipynb.)
+## Installering av conda, Jupyter Lab, Python og ting dei er avhengige av
+(Sjå også Jupyter notebook Installasjon.ipynb.)
 
-Gå til https://docs.conda.io/projects/conda/en/latest/user-guide/install, velg korrekt OS og installer miniconda.
+Gå til https://docs.conda.io/projects/conda/en/latest/user-guide/install, velg rett operativsystem og installer miniconda.
 
-Kjør følgende kommandoer for å oppdatere conda og installere nødvendige avhengigheter:
+Køyr følgande kommandoar for å oppdatere conda og installere nødvendige avhengigheiter:
 ```
 conda update -n base -c conda-forge conda 
 conda create -n nummet -c conda-forge jupyterlab python matplotlib numpy sympy
 ```
 
-Hvis du har MATLAB installert og ønsker å kunne kjøre notebooks med MATLAB-kode i tillegg til de med Python-kode, så må du også installere en MATLAB-kjerne for Jupyter:
+Hvis du har MATLAB installert og ønsker å kunne køyre notebooks med MATLAB/Octave-kode i tillegg til dei med Python-kode, må du også installere ei MATLAB-kjerne for Jupyter:
 ```
 conda activate nummet
 python -m pip install jupyter-matlab-proxy
 ```
 
 ## Kodestil
-Vi etterstreber å følge PEP 8 – Style Guide for Python Code (https://peps.python.org/pep-0008/) og PEP 257 – Docstring Conventions (https://peps.python.org/pep-0257/).
+Vi ønsker å følge PEP 8 – Style Guide for Python Code (https://peps.python.org/pep-0008/) og PEP 257 – Docstring Conventions (https://peps.python.org/pep-0257/).
 
 ## Linting av Python-kode
-For å gjøre automatisk sjekk av kode i notebooks kan du kjøre følgende kommandoer:
+For å gjøre automatisk sjekk av kode i notebooks kan du køyre følgende kommandoar:
 ```
-conda install -c conda-forge pylint (kjøres kun en gang)
+conda install -c conda-forge pylint (skal kun køyrast éin gong)
 cd <kapittel> 
 jupyter nbconvert --to=script *.ipynb
 pylint *.py
