@@ -1,6 +1,9 @@
 # Praktisk introduksjon til numeriske metodar
 Kodebase for Praktisk introduksjon til numeriske metodar.
 
+Her vil du finne all kode som har blitt utvikla i samband med læreboka Praktisk introduksjon til numeriske metodar: Øvingsoppgåver til Python.
+Python-kode er gitt i mapper svarande til dei ulike kapittel i boka - med både kjeldekode gitt både som ei samla notebook og som separate skript. Vi har også tatt med MATLAB/Octave-kode i notebook-format i eigne mapper.
+
 ## Installering av conda, Jupyter Lab, Python og ting dei er avhengige av
 (Sjå også Jupyter notebook Installasjon.ipynb.)
 
