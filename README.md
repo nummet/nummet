@@ -20,6 +20,8 @@ Hvis du har MATLAB installert og ønsker å kunne køyre notebooks med MATLAB/Oc
 conda activate nummet
 python -m pip install jupyter-matlab-proxy
 ```
+Du kan også finne MATLAB-kode som separate skript i dette reopet:
+[https://github.com/Soelve/PraktiskIntroTilNumMet_MATLAB](url)
 
 ## Kodestil
 Vi ønsker å følge PEP 8 – Style Guide for Python Code (https://peps.python.org/pep-0008/) og PEP 257 – Docstring Conventions (https://peps.python.org/pep-0257/).
