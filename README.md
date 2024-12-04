@@ -20,7 +20,7 @@ Hvis du har MATLAB installert og ønsker å kunne køyre notebooks med MATLAB/Oc
 conda activate nummet
 python -m pip install jupyter-matlab-proxy
 ```
-Du kan også finne MATLAB-kode som separate skript i dette reopet:
+Du kan også finne MATLAB-kode som separate skript i dette repoet:
 [https://github.com/Soelve/PraktiskIntroTilNumMet_MATLAB](url)
 
 ## Kodestil
