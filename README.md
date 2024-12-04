@@ -25,10 +25,11 @@ python -m pip install jupyter-matlab-proxy
 Vi ønsker å følge PEP 8 – Style Guide for Python Code (https://peps.python.org/pep-0008/) og PEP 257 – Docstring Conventions (https://peps.python.org/pep-0257/).
 
 ## Linting av Python-kode
-For å gjøre automatisk sjekk av kode i notebooks kan du køyre følgende kommandoar:
+For å gjere automatisk sjekk av kode i notebooks kan du køyre følgende kommandoar:
 ```
 conda install -c conda-forge pylint (skal kun køyrast éin gong)
 cd <kapittel> 
 jupyter nbconvert --to=script *.ipynb
 pylint *.py
 ```
+For reine skript droppar du linja "jupyter nbconvert --to=script *.ipynb"
