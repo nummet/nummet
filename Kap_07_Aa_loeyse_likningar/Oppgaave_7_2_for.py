@@ -1,6 +1,6 @@
 """Dette er ei implementering av Newtons metode der iterasjonane blir
-gjort i ei while-løkke.
-Startverdi, presisjon funksjonsuttrykk og den deriverte av denne er input.
+gjort i ei for-løkke.
+Startverdi, presisjon, funksjonsuttrykk og den deriverte av denne er input.
 Den estimerte løysinga blir skrive til skjerm.
 """
 
@@ -20,9 +20,6 @@ x = 1
 
 # Antal iterasjonar
 N = 5
-
-# Initerer talet på iterasjonar
-iterasjonar = 0
 
 # Lagar ein variabel for "gamal" x-verdi (tilfeldig tal)
 x_gml = 100
