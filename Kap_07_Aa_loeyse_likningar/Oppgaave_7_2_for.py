@@ -21,9 +21,6 @@ x = 1
 # Antal iterasjonar
 N = 5
 
-# Lagar ein variabel for "gamal" x-verdi (tilfeldig tal)
-x_gml = 100
-
 for n in range(1, N+1):
     # Kopierer den gamle x
     x_gml = x
