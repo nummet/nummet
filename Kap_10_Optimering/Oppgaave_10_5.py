@@ -1,8 +1,7 @@
 """
-Dette skriptet gjer lineær regresjon på eit sett med datapunkt via minste
+Dette skriptet gjer lineÃ¦r regresjon pÃ¥ eit sett med datapunkt via minste
 kvadrat-metoden. Minimeringa som inngÃ¥r blir gjort med gradient-metoden.
-
-Alle inputs, inkludert sjølve data-settet, er hardkoda i starten av skriptet.
+Alle inputs, inkludert sjÃ¸lve data-settet, er hardkoda i starten av skriptet.
 """
 
 # Bibliotek
@@ -16,7 +15,7 @@ AntalPunkt = len(Ydata)
 
 # Paramerar for gradient-metoden
 h = 1e-3            # For endeleg-differanse estimat
-gamma = 1e-2        # LÃ¦ringsraten
+gamma = 1e-2        # LÃƒÂ¦ringsraten
 GradMin = 1e-4      # Stopp-kriterium for gradienten
 
 # Startpunkt for parametrane
@@ -32,7 +31,7 @@ def S(a, b):
         S = S + (y - (a*x+b))**2
     return S
 
-# Initiere GradLengde - for å komme i gong
+# Initiere GradLengde - for Ã¥ komme i gong
 GradLengde = 1e2
 
 # Gradient-metoden
@@ -44,7 +43,7 @@ while GradLengde > GradMin:
     # Lengda av gradienten
     GradLengde = np.sqrt(dSda**2 + dSdb**2)
 
-    # Skriv GradLengde til skjerm - for å følge framdrifta
+    # Skriv GradLengde til skjerm - for Ã¥ fÃ¸lge framdrifta
     print(f'Lengda av gradienten: {GradLengde:.5e}')
     
     # Oppdaterar parametrane
@@ -69,5 +68,5 @@ plt.plot(xx, a*xx + b, 'r--', linewidth = 2)
 # Tekst og rutenett
 plt.xlabel('X', fontsize = 15)
 plt.ylabel('Y', fontsize = 15)
-plt.grid()
+plt.grid(visible=True)
 plt.show()
