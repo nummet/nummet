@@ -1,6 +1,6 @@
 """
-Dette skriptet plottar grafen til ein funksjon p� eit lukka intervall.
-I tillegg estimerar det masksimalverdie til funksjonen p� dette 
+Dette skriptet plottar grafen til ein funksjon på eit lukka intervall.
+I tillegg estimerar det masksimalverdie til funksjonen på dette 
 intervallet.
 """
 
@@ -12,11 +12,11 @@ from matplotlib import pyplot as plt
 def funk(x):
     return x**3 + 4*np.sin(x**2)
 
-# Definisjonsområde
+# DefinisjonsomrÃ¥de
 xMin = 0
 xMax = 2
 
-# Talet på punkt (både plotting og maksimering)
+# Talet pÃ¥ punkt (bÃ¥de plotting og maksimering)
 Npkt = 100
 
 # Vektorar til plotting
@@ -27,7 +27,7 @@ yVektor = funk(xVektor)
 MaxVerdi = funk(xMin)
 xForMax = xMin
 
-# Går gjennom "alle" x-verdiane
+# GÃ¥r gjennom "alle" x-verdiane
 for x in xVektor:
     y = funk(x)
     if y > MaxVerdi:
