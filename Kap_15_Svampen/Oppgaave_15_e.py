@@ -1,22 +1,21 @@
-"""Denne implementeringa reknar ut vassforbruket 
-som funksjon av tid for ein tank som blir tømd. 
-Profilen til tanken er gitt ved R(x) under.
-Vi tar utgongspunkt i Torrichellis lov, 
-V'(t) = -k sqrt(h), for å bestemme høgda som 
-funksjona av tid, som vi i sin tur brukar til 
-å bestemme volumet av det som har runne ut ved 
-integrasjon.
+"""Denne implementeringa reknar ut vassforbruket  som funksjon av tid for 
+ein tank som blir tømd. Profilen til tanken er gitt ved R(x) under.
+Vi tar utgongspunkt i Torrichellis lov,  V'(t) = -k sqrt(h), for å bestemme 
+høgda som funksjona av tid, som vi i sin tur brukar til å bestemme volumet 
+av det som har runne ut ved integrasjon.
 
-Vi plottar høgda av vatnet og volumet av vatnet
-som har runne ut som fuksjonar av tid. Vi plottar
-også høgda som funksjon av vassforbruk.
-Dette gjer vi både for tanken med R(x)-profilen
-og for ein sylinder-tank med same volum.
+Vi plottar høgda av vatnet og volumet av vatnet som har runne ut som 
+fuksjonar av tid. Vi plottar også høgda som funksjon av vassforbruk.
+Dette gjer vi både for tanken med R(x)-profilen og for ein sylinder-tank 
+med same volum.
 """
 
 # Bibliotek
 import numpy as np
 import matplotlib.pyplot as plt
+
+# Skriftsstorleik for plotting
+plt.rcParams.update({'font.size': 15})
 
 # Startkrav:
 t0 = 0
@@ -62,7 +61,8 @@ for n in range(0, N):
     volum_vektor[n+1] = volum
 
 # Plottar resultatet
-plt.plot(t_vektor, np.real(volum_vektor)/1e4, 'b-', linewidth=2, label="Svampen")
+plt.plot(t_vektor, np.real(volum_vektor)/1e4, 'b-', linewidth=2, 
+         label="Svampen")
 
 # Reknar ut volum og høgde som funksjonar av tid
 # for sylindertårnet
@@ -91,7 +91,6 @@ plt.plot(t_vektor, h_vektor, 'b-', linewidth=2,
 # Analytisk løysing for sylinder
 plt.plot(tid_sylinder, hoegde_sylinder(tid_sylinder), 
      'r-', linewidth=2, label='Sylinder')
-plt.rcParams.update({'font.size': 15})
 plt.xlabel('Tid [døgn]', fontsize=15)
 plt.ylabel('Høgde [meter]', fontsize=15)
 plt.grid(visible=True)
@@ -110,7 +109,6 @@ plt.plot(tid_sylinder, volum_sylinder(tid_sylinder)/1e4,
 # Totalt volum
 plt.hlines(v_tot/1e4, 0, 3, color='black', linestyle='dashed', 
            linewidth=2, label='Totalt volum')
-plt.rcParams.update({'font.size': 15})
 plt.xlabel('Tid [døgn]', fontsize=15)
 plt.ylabel('Volum [10$^4$ m$^3$]', fontsize=15)
 plt.grid(visible=True)
@@ -127,7 +125,6 @@ plt.plot(volum_vektor/1e4, h_vektor, 'b-', linewidth=2,
 plt.plot(volum_sylinder(tid_sylinder)/1e4, 
          hoegde_sylinder(tid_sylinder),'r-', 
          linewidth=2, label='Sylinder')
-plt.rcParams.update({'font.size': 15})
 plt.xlabel('Vassforbruk [10$^4$ m$^3$]', fontsize=15)
 plt.ylabel('Høgde [meter]', fontsize=15)
 plt.grid(visible=True)
