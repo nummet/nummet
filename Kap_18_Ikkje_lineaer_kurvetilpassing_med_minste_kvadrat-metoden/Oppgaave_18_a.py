@@ -1,5 +1,4 @@
-"""
-Dette skriptet plottar eit data-sett saman med ein parametrisert funksjon
+"""Dette skriptet plottar eit data-sett saman med ein parametrisert funksjon
 vi ønsker å tilpasse slik at funksjonen blir ei god tilnærming til punkta i 
 data-settet.
 
@@ -12,6 +11,9 @@ Alle inputs, inkludert sjølve data-settet, er hardkoda i starten av skriptet.
 # Bibliotek
 import numpy as np
 from matplotlib import pyplot as plt
+
+# Fontstorleik i plotta
+plt.rcParams.update({'font.size': 15})
 
 # Datasett
 Ydata = [-3.9, -2.3, -1.2, 0.1, -1, -3.8, -5.3, -3.7, -1.3, 0.2, 1.5, 2.7, 
@@ -37,11 +39,11 @@ xx2 = np.linspace(Xdata[0], Xdata[-1], 200)
 yy2 = f(xx2, a, b, c, d, e)
 plt.figure(1)
 plt.clf()
-plt.rc('xtick', labelsize=15) 
-plt.rc('ytick', labelsize=15) 
+plt.rc('xtick') 
+plt.rc('ytick') 
 plt.plot(Xdata, Ydata, 'kx')
 plt.plot(xx2, yy2, 'r-')
-plt.xlabel('X', fontsize = 15)
-plt.ylabel('Y', fontsize = 15)
-plt.grid()
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.grid(visible=True)
 plt.show()
