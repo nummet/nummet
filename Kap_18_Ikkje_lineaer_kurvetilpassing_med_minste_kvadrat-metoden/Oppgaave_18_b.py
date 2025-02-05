@@ -1,8 +1,7 @@
-"""
-Dette skriptet optimerar parametrane for ein modelle for eit gitt data-sett. 
+"""Dette skriptet optimerar parametrane for ein modell for eit gitt data-sett. 
 Modellen er ein kombinasjon av ein trigonometrisk og ein lineær funksjon.
 
-Parametrane i modellen blir bestemt ved først å minimere summen av kvadrata av 
+Parametrane i modellen blir bestemt ved først å rekne ut summen av kvadrata av 
 feilen og så minimere denne ved hjelp av gradient-metoden.
 
 Alle inputs, inkludert sjølve data-settet, er hardkoda i starten av skriptet.
