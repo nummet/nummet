@@ -3,7 +3,7 @@ straum - med to ulike strategiar.
 Strategi 1 går ut på å alltid kompensere for straumen ved å gjere 
 y-komponenten av svømme-farten like stor som straument S(x).
 Strategi 2 går ut på at vinkelen theta mellom farten v og x-aksen blir holdt 
-fast heile svÃ¸mmeturen. Vinkelen blir då bestemt av kravet om at ein ikkje 
+fast heile svømmeturen. Vinkelen blir då bestemt av kravet om at ein ikkje 
 skal ha noko netto avdrift i y-retning.
 
 Skriptet reknar ut kor lang tid ein brukar med kvar av metodane. I tillegg 
@@ -34,7 +34,7 @@ def S(x):
 def Trapes(x, y):
     L = len(x)                  # Antal punkt
     dx = x[1] - x[0]            # Delta x (antar uniformt grid)
-    T = 0.5*dx*(y[0] + y[-1])   # FÃ¸rste og siste punkt
+    T = 0.5*dx*(y[0] + y[-1])   # Første og siste punkt
     for i in range(1,L-1):      # Summerar alle andre bidrag
         T = T + dx*y[i]         
     return T
