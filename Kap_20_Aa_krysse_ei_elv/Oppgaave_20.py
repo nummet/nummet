@@ -1,5 +1,4 @@
-"""
-Dette skriptet estimerar kor lang tid det tar å krysse ei elv med variabel 
+"""Dette skriptet estimerar kor lang tid det tar å krysse ei elv med variabel 
 straum - med to ulike strategiar.
 Strategi 1 går ut på å alltid kompensere for straumen ved å gjere 
 y-komponenten av svømme-farten like stor som straument S(x).
@@ -12,13 +11,12 @@ plottar vi banen gjennom elva og framdrifta over elva plotta som funksjon av
 tid.
 """
 
-##############################################################################################
-# XXX: Koden er kopiert over i notebook (i samme katalog) og revidert med tanke på stil der. #
-##############################################################################################
-
 # Bibliotek
 import numpy as np
 from matplotlib import pyplot as plt
+
+# Fontstorleik i plotta
+plt.rcParams.update({'font.size': 15})
 
 # Input-variablar
 D = 20          # Breidda
@@ -47,7 +45,7 @@ TidVektor = 1/np.sqrt(v**2 - S(xVektor)**2)
 T1 = Trapes(xVektor, TidVektor)
 
 # Skriv resultatet til skjerm
-print(f'Med strategi 1 brukar vi {T1:.2f} s pÃ¥ Ã¥ krysse elva')    
+print(f'Med strategi 1 brukar vi {T1:.2f} s på å krysse elva')    
 
 # Bestemmer vinkelen for strategi 2
 Svektor = S(xVektor)
@@ -56,7 +54,7 @@ theta = np.arcsin(Int/(v*D))
 T2 = D**2/np.sqrt((v*D)**2 - Int**2)
 
 # Skriv resultatet til skjerm
-print(f'Med strategi 2 brukar vi {T2:.2f} s pÃ¥ Ã¥ krysse elva')    
+print(f'Med strategi 2 brukar vi {T2:.2f} s på å krysse elva')    
     
 # Plottar framdrifta som funksjon av tid for strategi 1:
 # Tida brukt for kvar \Delta x, strategi 1:
@@ -79,11 +77,9 @@ plt.plot(FramdriftTidS1, xVektor,'-', color = 'blue', linewidth = 1.5)
 plt.plot(FramdriftTidS2, xVektor, '-', color = 'red', linewidth = 1.5)
 # Markerar sluttidene som loddrette strekar
 plt.vlines([T1, T2], 0, D, linestyles = 'dashed', colors = 'black')
-# Pyntar pÃ¥ figuren
-plt.xlabel('Tid [s]', fontsize = 25)
-plt.ylabel('Framdrift [m]', fontsize = 25)
-plt.xticks(fontsize=25)
-plt.yticks(fontsize=25)
+# Pyntar på figuren
+plt.xlabel('Tid [s]')
+plt.ylabel('Framdrift [m]')
 plt.ylim(0, D)
 plt.grid()
 plt.show()
@@ -106,11 +102,8 @@ plt.clf()
 plt.plot([0, D], [0, 0], '-', color = 'blue', linewidth = 1.5)
 # Strategi 2
 plt.plot(xVektorS2, yVektorS2, '-', color = 'red', linewidth = 1.5)    
-plt.xlabel('Framdrift [m]', fontsize = 25)
-plt.ylabel('Avdrift [m]', fontsize = 25)
-plt.xticks(fontsize=25)
-plt.yticks(fontsize=25)
+plt.xlabel('Framdrift [m]')
+plt.ylabel('Avdrift [m]')
 plt.xlim(0, D)
 plt.grid()
 plt.show()
-    
